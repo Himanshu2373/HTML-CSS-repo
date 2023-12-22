@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+        }
+        input::placeholder {
+         font-size: 18px;
+         color: black;
+        }
+       input{
+        padding: 5px;
+        height: 30px;
+       }
+       button{
+        background-color: gray;
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+       }
+    </style>
+</head>
+<body>
+    <form action="">
+    <h1><center>AMS Asset Status Form</center></h1>
+    <hr>
+    <h2>Asset Status</h2>
+    <hr>
+    <p><u>Serial No :</u></p>  
+     <input type="text"  placeholder="Enter Serial No."> 
+     <button type="submit" value="Submit" >Submit</button>
+     <br>
+     <hr>
+     <br>
+     <table>
+        <thead>
+        <tr>
+            <th>Sr.No.</th>
+            <th>Region</th>
+            <th>Branch</th>
+            <th>Current Location</th>
+            <th>Serial No.</th>
+            <th>Product/Breand/Model</th>
+            <th>Vendor Name</th>
+            <th>Current Status</th>
+            <th>Receiver Code</th>
+            <th>Receiver Name</th>
+            <th>Active</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jaipur Ro</td>
+            <td>Sikar</td>
+            <td>Sikar</td>
+            <td>PGMA</td>
+            <td>LAPTOP/Lenevo/Lenevo V-14</td>
+            <td>ABC</td>
+            <td>Not-Working</td>
+            <td>011796</td>
+            <td>Karam</td>
+            <td>
+                <input type="button" value="Active" style="background-color: gray;">
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jaipur Ro</td>
+            <td>Sikar</td>
+            <td>Sikar</td>
+            <td>GJHA</td>
+            <td>LAPTOP/Lenevo/Lenevo V-14</td>
+            <td>ANC</td>
+            <td>Working</td>
+            <td>011796</td>
+            <td>Ayush</td>
+            <td>
+                <input type="button" value="InActive" style="background-color: gray;">
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Jaipur Ro</td>
+            <td>Sikar</td>
+            <td>Sikar</td>
+            <td>KLAM</td>
+            <td>LAPTOP/Lenevo/Lenevo V-14</td>
+            <td>ANM</td>
+            <td>Not-Working</td>
+            <td>011796</td>
+            <td>Saurav</td>
+            <td>
+                <input type="button" value="Active" style="background-color: gray;">
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Jaipur Ro</td>
+            <td>Sikar</td>
+            <td>Sikar</td>
+            <td>MKAN</td>
+            <td>LAPTOP/Lenevo/Lenevo V-14</td>
+            <td>AKL</td>
+            <td>Working</td>
+            <td>011796</td>
+            <td>Akash</td>
+            <td>
+                <input type="button" value="InActive" style="background-color: gray;">
+            </td>
+        </tr>
+    </thead>
+     </table>
+     <br>
+     <hr>
+    </form>
+</body>
+</html>
