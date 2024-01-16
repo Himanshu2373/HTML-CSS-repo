@@ -13,6 +13,7 @@
         border: 1px solid black;
         /* collapse multiple line in single line */
         border-collapse: collapse;
+        text-align: center;
       }
     </style>
   </head>
@@ -26,6 +27,7 @@
     <tbody></tbody>        : used for table body
     <caption></caption>    : used for table caption
     <tfoot></tfoot>        : used for table footer -->
+
     <table>
       <caption>
         My first saving
@@ -58,6 +60,42 @@
           <td>800</td>
         </tr>
       </tfoot>
+    </table>
+    <br />
+    <br /><br />
+
+    <!-- rowspan and colspan  -->
+
+    <h1>Rowspan and colspan tutorial</h1>
+    <table>
+      <caption>
+        My first saving
+      </caption>
+      <tr>
+        <td colspan="2">ram</td>
+
+        <td>ram</td>
+      </tr>
+      <tr>
+        <td>ram</td>
+        <td rowspan="3">ram</td>
+        <td>ram</td>
+      </tr>
+      <tr>
+        <td>ram</td>
+        <!-- <td>ram</td> -->
+        <td>ram</td>
+      </tr>
+      <tr>
+        <td>ram</td>
+        <!-- <td>ram</td> -->
+        <td>ram</td>
+      </tr>
+      <tr>
+        <td>ram</td>
+        <td>ram</td>
+        <td>ram</td>
+      </tr>
     </table>
   </body>
 </html>
