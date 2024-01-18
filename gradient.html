@@ -58,6 +58,44 @@
         background-image: linear-gradient(to top left, blue, green, red);
         margin: 10px;
       }
+
+      .grd1 {
+        display: flex;
+        margin: 10px;
+      }
+      .box8 {
+        border: 2px solid black;
+        width: 150px;
+        height: 250px;
+        background-image: radial-gradient(red, blue, green);
+        margin: 10px;
+      }
+      .box9 {
+        border: 2px solid black;
+        width: 150px;
+        height: 250px;
+        background-image: radial-gradient(circle, red, blue, green);
+        margin: 10px;
+      }
+      .box10 {
+        border: 2px solid black;
+        width: 150px;
+        height: 250px;
+        background-image: radial-gradient(red 20%, blue 7%, green 50%);
+        margin: 10px;
+      }
+
+      .grd2 {
+        display: flex;
+        margin: 10px;
+      }
+      .box11 {
+        border: 2px solid black;
+        width: 150px;
+        height: 150px;
+        background-image: conic-gradient(red, blue, green, pink);
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
@@ -70,6 +108,18 @@
       <div class="box5">Linear Gradient to bottom</div>
       <div class="box6">Linear Gradient to bottom right</div>
       <div class="box7">Linear Gradient to top left</div>
+    </div>
+
+    <h1>radial Gradient tutorial</h1>
+    <div class="grd1">
+      <div class="box8">Radial Gradient default</div>
+      <div class="box9">Radial Gradient according to shape</div>
+      <div class="box10">Radial Gradient according to color percentage</div>
+    </div>
+
+    <h1>conic Gradient tutorial</h1>
+    <div class="grd2">
+      <div class="box11">conic Gradient</div>
     </div>
   </body>
 </html>
