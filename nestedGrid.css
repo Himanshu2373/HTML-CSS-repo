@@ -1,0 +1,43 @@
+.container1 {
+  height: 600px;
+  width: 100%;
+  border: 1px solid red;
+  background-color: yellow;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr 100px;
+  grid-template-areas:
+    "hdr hdr"
+    "side main"
+    "ftr ftr";
+}
+#hdr {
+  grid-area: hdr;
+}
+#side {
+  grid-area: side;
+}
+#main {
+  grid-area: main;
+}
+#ftr {
+  grid-area: ftr;
+}
+
+.box1 {
+  border: 1px solid black;
+  background-color: aqua;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+.item {
+  border: 2px solid red;
+  background-color: hotpink;
+}

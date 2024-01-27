@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.parallax1 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./img/image1.png);
+  background-attachment: fixed;
+}
+
+.parallax1 h2 {
+  position: relative;
+  left: 500px;
+  top: 300px;
+  width: 150px;
+  height: 30px;
+  padding-left: 10px;
+  justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.parallax2 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./img/image2.png);
+  background-attachment: fixed;
+}
+
+.parallax2 h2 {
+  position: relative;
+  left: 500px;
+  top: 300px;
+  width: 150px;
+  height: 30px;
+  padding-left: 10px;
+  justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.parallax3 {
+  height: 600px;
+  width: 100%;
+  background-image: url(./img/image3.png);
+  background-attachment: fixed;
+}
+
+.parallax3 h2 {
+  position: relative;
+  left: 500px;
+  top: 300px;
+  width: 150px;
+  height: 30px;
+  padding-left: 10px;
+  justify-content: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+
+.para {
+  height: 100px;
+  padding: 30px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
