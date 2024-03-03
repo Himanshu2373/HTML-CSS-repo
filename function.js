@@ -1,16 +1,15 @@
-
 //function decleartion
 
 //   function function_name()
 //        {
-//                                    
+//
 //        }
 
 // function expression
 
 // let function_name= function()
 //      {
-//                                    
+//
 //      }
 
 // ARROW FUNCTION
@@ -20,8 +19,8 @@
 //             // Body
 //            }
 
-// NOTE : IN arrow function when we pass one parameter then we can use or not use 
-//        () bracket as own choice but when pass two parameters or empty parameter 
+// NOTE : IN arrow function when we pass one parameter then we can use or not use
+//        () bracket as own choice but when pass two parameters or empty parameter
 //        then must be use bracket
 
 //FUNCTION INSIDE FUNCTION
@@ -37,8 +36,8 @@
 
 //  function1()   // outside function call
 
- // Lexical scope : means first priority inside function then outside function
- 
+// Lexical scope : means first priority inside function then outside function
+
 //  var a = 10; // variable a assigned to 10
 
 // var func = function (){ // outermost function
@@ -52,12 +51,11 @@
 //     innerFunc();
 //     return;
 // }
-// func(); // invoke function func 
+// func(); // invoke function func
 // console.log("only a is accessible (global):", a);
 
 // BLOCK SCOPE VS FUNCTION SCOPE
 // let and Const are BLOCK SCOPE , Var is Function scope
-
 
 //REST Parameter
 
@@ -70,60 +68,58 @@
 
 // OBJECT PASS WITHIN FUNCTION
 
-const person={
-     name :"Himanshu",
-     Gender:"Male"
+const person = {
+  name: "Himanshu",
+  Gender: "Male",
+};
+
+function print(obj) {
+  console.log(obj.name);
+  console.log(obj.Gender);
 }
 
-function print(obj){
-     console.log(obj.name)
-     console.log(obj.Gender)
-}
-
-print(person)
+print(person);
 
 //Function inside object
 
-let person2={
-     Name:"himanshu",
-     age:24,
-     about:function(){
-          // console.log("Name is Himanshu and age is 24")
-          console.log("Name is "+this.Name+" and age is" +this.age)
-     }
-   }
+let person2 = {
+  Name: "himanshu",
+  age: 24,
+  about: function () {
+    // console.log("Name is Himanshu and age is 24")
+    console.log("Name is " + this.Name + " and age is" + this.age);
+  },
+};
 
-   person2.about()
+person2.about();
 
 // call(), apply() and bind()
 
- const person4={
-     Name:"himanshu",
-     age:24,
-     about:function(){
-          // console.log("Name is Himanshu and age is 24")
-          console.log("Name is "+this.Name+" and age is" +this.age)
-     }
-   }
-const person3={
-     Name:"RAM",
-     age:23
-}
+const person4 = {
+  Name: "himanshu",
+  age: 24,
+  about: function () {
+    // console.log("Name is Himanshu and age is 24")
+    console.log("Name is " + this.Name + " and age is" + this.age);
+  },
+};
+const person3 = {
+  Name: "RAM",
+  age: 23,
+};
 
-person4.about.call(person3)   //output:Name is RAM and age is23
-person4.about.apply(person3,[" "])
-
+person4.about.call(person3); //output:Name is RAM and age is23
+person4.about.apply(person3, [" "]);
 
 //Function create object
 
-function createUser(Name,age,email,add){
-     const user1={}
-     user1.Name=Name,
-     user1.age=age,
-     user1.Name=email,
-     user1.age=add,
-     user1.about=function(){
-          return this.
-     }
-     
+function createUser(Name, age, email, add) {
+  const user1 = {};
+  (user1.Name = Name),
+    (user1.age = age),
+    (user1.Name = email),
+    (user1.age = add),
+    (user1.about = function () {
+      return this;
+    });
 }
